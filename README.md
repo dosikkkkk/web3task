@@ -22,10 +22,3 @@ index.html, task1.html ... task4.html
 style.css
 validation.js, registration.js
 ```
-
-## How to run
-1. Clone the repository or download the ZIP.
-2. Open `index.html` in a browser (internet is needed for the Bootstrap CDN).
-
-## How to publish (GitHub Pages)
-Repository -> Settings -> Pages -> Source: `main` branch, `/ (root)` -> Save.
