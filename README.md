@@ -17,9 +17,10 @@ A multi-page website about HTML forms, HTML5 validation and Bootstrap 5.3 form c
 
 ## Structure
 ```
+README.md
 index.html, task1.html ... task4.html
-css/style.css
-js/validation.js, js/registration.js
+style.css
+validation.js, registration.js
 ```
 
 ## How to run
