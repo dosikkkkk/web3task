@@ -1,3 +1,6 @@
 body { min-height: 100vh; display: flex; flex-direction: column; }
 main { flex: 1; max-width: 800px; }
 .plain-form input, .plain-form textarea { margin-top: 4px; max-width: 100%; }
+
+/* Bootstrap's d-block overrides the hidden attribute, so force it to hide */
+.gender-error[hidden] { display: none !important; }
