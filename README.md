@@ -18,7 +18,19 @@ A multi-page website about HTML forms, HTML5 validation and Bootstrap 5.3 form c
 ## Structure
 ```
 README.md
-index.html, task1.html ... task4.html
+index.html
+task1.html
+task2.html
+task3.html
+task4.html
 style.css
-validation.js, registration.js
 ```
+
+JavaScript is written directly inside `task3.html` and `task4.html` using `<script>` tags, so no separate `.js` files are needed.
+
+## How to run
+1. Clone the repository or download the ZIP.
+2. Open `index.html` in a browser (internet is needed for the Bootstrap CDN).
+
+## How to publish (GitHub Pages)
+Repository -> Settings -> Pages -> Source: `main` branch, `/ (root)` -> Save.
