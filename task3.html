@@ -17,8 +17,8 @@
 </nav>
 <main class="container py-4">
 <h1 class="mb-3">Task 3. Bootstrap Validation Styles</h1>
-<p>Fields turn green (<code>is-valid</code>) or red (<code>is-invalid</code>) as you type. Try valid and invalid data.</p>
-<form id="contactForm" action="#" method="get" class="row g-3" novalidate>
+<p>Fields turn green (valid) or red (invalid) as you type, using Bootstrap's <code>was-validated</code> class together with HTML5 attributes. Try valid and invalid data.</p>
+<form action="#" method="get" class="row g-3 was-validated">
   <div class="col-md-6">
     <label for="name" class="form-label">Name</label>
     <input type="text" class="form-control" id="name" placeholder="John Smith" required minlength="3">
@@ -40,42 +40,9 @@
   <div class="col-12">
     <button type="submit" class="btn btn-success">Send</button>
   </div>
-  <div class="col-12"><div id="result"></div></div>
 </form>
 </main>
 <footer class="text-center text-muted py-3 border-top">Assignment #4 &middot; Forms and Validation</footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-// Validates one field and toggles Bootstrap is-valid / is-invalid classes
-function validateField(field) {
-  if (field.checkValidity()) {
-    field.classList.remove("is-invalid");
-    field.classList.add("is-valid");
-    return true;
-  }
-  field.classList.remove("is-valid");
-  field.classList.add("is-invalid");
-  return false;
-}
-
-function initLiveValidation(formId, resultId, successText) {
-  const form = document.getElementById(formId);
-  const result = document.getElementById(resultId);
-  const fields = form.querySelectorAll("input, textarea, select");
-
-  fields.forEach(f => f.addEventListener("input", () => validateField(f)));
-
-  form.addEventListener("submit", e => {
-    e.preventDefault();
-    let ok = true;
-    fields.forEach(f => { if (!validateField(f)) ok = false; });
-    result.innerHTML = ok
-      ? `<div class="alert alert-success">${successText}</div>`
-      : `<div class="alert alert-danger">Please fix the errors above.</div>`;
-  });
-}
-
-initLiveValidation("contactForm", "result", "Message sent successfully!");
-</script>
 </body>
 </html>

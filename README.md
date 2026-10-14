@@ -13,7 +13,7 @@ A multi-page website about HTML forms, HTML5 validation and Bootstrap 5.3 form c
 | `task1.html` | Task 1. HTML5 validation (`required`, `type`, `minlength`, `maxlength`, `pattern`, `min`/`max`) |
 | `task2.html` | Task 2. Bootstrap styling, grid, placeholders, helper text |
 | `task3.html` | Task 3. Bootstrap validation (`is-valid` / `is-invalid`, feedback messages) |
-| `task4.html` | Task 4. Registration form: grid, HTML5 + Bootstrap validation, password match, Reset |
+| `task4.html` | Task 4. Registration form: grid, HTML5 + Bootstrap validation, Reset |
 
 ## Structure
 ```
@@ -26,7 +26,7 @@ task4.html
 style.css
 ```
 
-JavaScript is written directly inside `task3.html` and `task4.html` using `<script>` tags, so no separate `.js` files are needed.
+No JavaScript is used. Validation is done with HTML5 attributes and Bootstrap's `was-validated` class.
 
 ## How to run
 1. Clone the repository or download the ZIP.
