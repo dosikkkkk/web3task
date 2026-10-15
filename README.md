@@ -26,7 +26,7 @@ task4.html
 style.css
 ```
 
-No JavaScript is used. Validation is done with HTML5 attributes and Bootstrap's `was-validated` class.
+No JavaScript is used. Validation rules are HTML5 attributes; green/red feedback is shown with Bootstrap's `valid-feedback` / `invalid-feedback` classes and CSS `:user-valid` / `:user-invalid`, so the page is not red on first load.
 
 ## How to run
 1. Clone the repository or download the ZIP.
